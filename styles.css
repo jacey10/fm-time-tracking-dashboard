@@ -7,7 +7,6 @@
   font-weight: 300;
   font-style: normal;
   font-display: swap; 
-  
 }
 /* rubik-regular - latin */
 @font-face {
@@ -95,6 +94,47 @@ textarea:not([rows]) {
 /* Anything that has been anchored to should have extra scroll margin */
 :target {
   scroll-margin-block: 5ex;
+}
+
+/* === CSS CUSTOM PROPERTIES === */
+
+:root {
+  /* === Color Pallette === */
+
+  /* Primary Colors */
+  --clr-blue-300: hsl(195, 74%, 62%);
+  --clr-orange-300: hsl(15, 100%, 70%);
+  --clr-yellow-300: hsl(43, 84%, 65%);
+  --clr-green-400: hsl(145, 58%, 55%);
+  --clr-pink-400: hsl(348, 100%, 68%);
+  --clr-purple-600: hsl(246, 80%, 60%);
+  --clr-purple-700: hsl(264, 64%, 52%);
+
+  /* Neutral Colors */
+  --clr-navy-200: hsl(236, 100%, 87%);
+  --clr-navy-900: hsl(235, 46%, 20%);
+  --clr-navy-950: hsl(226, 43%, 10%);
+  --clr-purple-500: hsl(235, 45%, 61%);
+
+  /* === Typography === */
+  /* font family */
+  --ff-body: "Rubik", sans-serif;
+
+  /* font size */
+  --fs-body: 0.875rem;
+  --fs-card-titles: 1.125rem;
+
+  /* font weights */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 500;
+
+  /* Spacing */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xlg: 2.5rem;
 }
 
 body {
