@@ -11,7 +11,7 @@
 /* rubik-regular - latin */
 @font-face {
   font-family: 'Rubik';
-  src: url('../fonts/rubik-v31-latin-regular.woff2') format('woff2'); 
+  src: url('assets/fonts/rubik-v31-latin-regular.woff2') format('woff2'); 
   font-weight: 400;
   font-style: normal;
   font-display: swap; 
@@ -19,7 +19,7 @@
 /* rubik-500 - latin */
 @font-face {
   font-family: 'Rubik';
-  src: url('../fonts/rubik-v31-latin-500.woff2') format('woff2'); 
+  src: url('assets/fonts/rubik-v31-latin-500.woff2') format('woff2'); 
   font-weight: 500;
   font-style: normal;
   font-display: swap; 
@@ -117,8 +117,9 @@ textarea:not([rows]) {
   --clr-purple-500: hsl(235, 45%, 61%);
 
   /* === Typography === */
+
   /* font family */
-  --ff-body: "Rubik", sans-serif;
+  --ff-body: 'Rubik', sans-serif;
 
   /* font size */
   --fs-body: 0.875rem;
@@ -135,6 +136,7 @@ textarea:not([rows]) {
   --space-md: 1.5rem;
   --space-lg: 2rem;
   --space-xlg: 2.5rem;
+  --space-xxlg: 3rem;
 }
 
 body {
@@ -169,40 +171,88 @@ body {
   border: 0
 }
 
-.background {
-  width: 15rem;
+.main__profile--card {
+  margin-bottom: 4rem;
+}
+
+.main__profile--background {
+  width: 17rem;
+  height: 12rem;
+  border-radius: 0.8rem;
+  background: var(--clr-navynn-900);
+}
+
+.dashboard--timeline {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-xxlg);
+  transform: translateY(9.3rem);
+  color: var(--clr-purple-500);
+  font-size: 1.1rem;
+}
+
+.dashboard--btn {
+  cursor: pointer;
+}
+
+.dashboard--btn:hover {
+  color: white;
+}
+
+.main__profile--foreground{
+  width: 17rem;
   height: 8rem;
+  border-radius: 0.8rem;
+  background: var(--clr-purple-600);
+  margin-top: -12rem;
+  display: grid;
+  place-items: center;
+}
+
+.main__participant--profile {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.participant--image {
+  width: 3rem;
+  height: 3rem;
+  box-shadow: 0 0 0 2px white;
+  border-radius: 50%;
+}
+
+.dashboard--description {
+  line-height: 1.3;
+}
+
+.dashboard--description .text {
+  font-size: 0.95rem;
+  color: var(--clr-navy-200);
+}
+
+.dashboard--description .participant--name {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: var(--fw-regular);
+}
+
+.cards {
+  width: clamp(18rem, 85vw, 22rem);
+}
+
+.background {
+  height: 9rem;
   border-radius: 1rem;
   z-index: 1;
-  background-color: peru;
 }
 
 .foreground {
-  width: 15rem;
-  height: 6rem;
+  height: 7rem;
   border-radius: 0.8rem;
   z-index: 2;
   background-color: var(--clr-navy-900);
   margin-top: -6rem;
-}
-
-.background-n9 {
-  width: 15rem;
-  height: 8rem;
-  border-radius: 0.8rem;
-  background: var(--clr-navy-900);
-}
-
-.foreground-p6{
-  width: 15rem;
-  height: 6rem;
-  border-radius: 0.8rem;
-  background: var(--clr-purple-600);
-  margin-top: -9rem;
-}
-
-.card-1 {
-  margin-bottom: 3rem;
 }
 
 .orange300 {
@@ -228,6 +278,8 @@ body {
 .yellow300 {
   background: var(--clr-yellow-300);
 }
+
+
 
 
 
