@@ -7,64 +7,131 @@
     <link rel="preload" href="assets/fonts/rubik-v31-latin-300.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/fonts/rubik-v31-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/fonts/rubik-v31-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
     <title>Frontend Mentor | Time tracking dashboard</title>
   </head>
   <body>
+    
+    <main class="main__card--container">
 
-    Report for
-    Jeremy Robson
+      <h1 class="sr-only">Time Tracking Dashboard</h1>
 
-    Daily
-    Weekly
-    Monthly
+      <div class="main__profile--card">
+        <div class="main__profile--background cards">
+          <div class="dashboard--timeline">
+            <span class="dashboard--btn">Daily</span>
+            <span class="dashboard--btn">Weekly</span>
+            <span class="dashboard--btn">Monthly</span>
+          </div>
+        </div>
 
-    Work
-    5hrs <!-- daily -->
-    Previous - 7hrs <!-- daily -->
-    32hrs <!-- weekly -->
-    Previous - 36hrs <!-- weekly -->
-    103hrs <!-- monthly -->
-    Previous - 128hrs <!-- monthly -->
+        <div class="main__profile--foreground cards">
+          <div class="main__participant--profile">
+            <img class="participant--image" src="assets/images/image-jeremy.png" alt="" width="234" height="234">
+            <div class="dashboard--description">
+              <span class="text">Report for</span>
+              <p class="participant--name">Jeremy Robson</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    Play
-    1hr <!-- daily -->
-    Previous - 2hrs <!-- daily -->
-    10hrs <!-- weekly -->
-    Previous - 8hrs <!-- weekly -->
-    23hrs <!-- monthly -->
-    Previous - 29hrs <!-- monthly -->
+      <div class="cards">
+        <div class="background orange300">
+          <img src="assets/images/icon-work.svg" alt="">
+        </div>
+        <div class="foreground"></div>
+      </div>
 
-    Study
-    0hrs <!-- daily -->
-    Previous - 1hr <!-- daily -->
-    4hrs <!-- weekly -->
-    Previous - 7hrs <!-- weekly -->
-    13hrs <!-- monthly -->
-    Previous - 19hrs <!-- monthly -->
+      <div class="cards">
+        <div class="background blue300">
+          <img src="assets/images/icon-play.svg" alt="">
+        </div>
+        <div class="foreground"></div>
+      </div>
 
-    Exercise
-    1hr <!-- daily -->
-    Previous - 1hr <!-- daily -->
-    4hrs <!-- weekly -->
-    Previous - 5hrs <!-- weekly -->
-    11hrs <!-- monthly -->
-    Previous - 18hrs <!-- monthly -->
+      <div class="cards">
+        <div class="background pink400">
+          <img src="assets/images/icon-study.svg" alt="">
+        </div>
+        <div class="foreground"></div>
+      </div>
 
-    Social
-    1hr <!-- daily -->
-    Previous - 3hrs <!-- daily -->
-    5hrs <!-- weekly -->
-    Previous - 10hrs <!-- weekly -->
-    21hrs <!-- monthly -->
-    Previous - 23hrs <!-- monthly -->
+      <div class="cards">
+        <div class="background green400">
+          <img src="assets/images/icon-exercise.svg" alt="">
+        </div>
+        <div class="foreground"></div>
+      </div>
 
-    Self Care
-    0hrs <!-- daily -->
-    Previous - 1hr <!-- daily -->
-    2hrs <!-- weekly -->
-    Previous - 2hrs <!-- weekly -->
-    7hrs <!-- monthly -->
-    Previous - 11hrs <!-- monthly -->
+      <div class="cards">
+        <div class="background purple700">
+          <img src="assets/images/icon-social.svg" alt="">
+        </div>
+        <div class="foreground"></div>
+      </div>
+
+      <div class="cards">
+        <div class="background yellow300">
+          <img src="assets/images/icon-self-care.svg" alt="">
+        </div>
+        <div class="foreground"></div>
+      </div>
+
+      
+
+      Work
+      5hrs <!-- daily -->
+      Previous - 7hrs <!-- daily -->
+      32hrs <!-- weekly -->
+      Previous - 36hrs <!-- weekly -->
+      103hrs <!-- monthly -->
+      Previous - 128hrs <!-- monthly -->
+
+      Play
+      1hr <!-- daily -->
+      Previous - 2hrs <!-- daily -->
+      10hrs <!-- weekly -->
+      Previous - 8hrs <!-- weekly -->
+      23hrs <!-- monthly -->
+      Previous - 29hrs <!-- monthly -->
+
+      Study
+      0hrs <!-- daily -->
+      Previous - 1hr <!-- daily -->
+      4hrs <!-- weekly -->
+      Previous - 7hrs <!-- weekly -->
+      13hrs <!-- monthly -->
+      Previous - 19hrs <!-- monthly -->
+
+      Exercise
+      1hr <!-- daily -->
+      Previous - 1hr <!-- daily -->
+      4hrs <!-- weekly -->
+      Previous - 5hrs <!-- weekly -->
+      11hrs <!-- monthly -->
+      Previous - 18hrs <!-- monthly -->
+
+      Social
+      1hr <!-- daily -->
+      Previous - 3hrs <!-- daily -->
+      5hrs <!-- weekly -->
+      Previous - 10hrs <!-- weekly -->
+      21hrs <!-- monthly -->
+      Previous - 23hrs <!-- monthly -->
+
+      Self Care
+      0hrs <!-- daily -->
+      Previous - 1hr <!-- daily -->
+      2hrs <!-- weekly -->
+      Previous - 2hrs <!-- weekly -->
+      7hrs <!-- monthly -->
+      Previous - 11hrs <!-- monthly -->
+        
+
+
+    </main>
     
   </body>
 </html>
