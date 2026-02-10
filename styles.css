@@ -172,7 +172,7 @@ body {
 }
 
 .main__profile--card {
-  margin-bottom: 4rem;
+  margin-block-end: 4rem;
 }
 
 .main__profile--background {
@@ -205,7 +205,7 @@ body {
   height: 8rem;
   border-radius: 0.8rem;
   background: var(--clr-purple-600);
-  margin-top: -12rem;
+  margin-block-start: -12rem;
   display: grid;
   place-items: center;
 }
@@ -262,7 +262,7 @@ body {
   height: 7rem;
   background-color: var(--clr-navy-900);
   border-radius: 0.8rem;
-  margin-top: -6rem;
+  margin-block-start: -6rem;
   position: relative;
   z-index: 1000;
   padding: var(--space-md);
