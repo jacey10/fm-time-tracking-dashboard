@@ -155,8 +155,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  margin-block: 2rem;
+  gap: var(--space-md);
+  margin-block: var(--space-lg);
 }
 
 .sr-only {
@@ -179,7 +179,7 @@ body {
   width: 17rem;
   height: 12rem;
   border-radius: 0.8rem;
-  background: var(--clr-navynn-900);
+  background: var(--clr-navy-900);
 }
 
 .dashboard--timeline {
@@ -188,10 +188,11 @@ body {
   gap: var(--space-xxlg);
   transform: translateY(9.3rem);
   color: var(--clr-purple-500);
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .dashboard--btn {
+  all: unset;
   cursor: pointer;
 }
 
@@ -244,15 +245,59 @@ body {
 .background {
   height: 9rem;
   border-radius: 1rem;
+  display: flex;
+  justify-content: end;
   z-index: 1;
+  overflow: hidden;
+}
+
+.icons {
+  width: 5rem;
+  height: 5rem;
+  margin-inline-end: 0.9rem;
+  margin-block-start: -0.3rem;
 }
 
 .foreground {
   height: 7rem;
-  border-radius: 0.8rem;
-  z-index: 2;
   background-color: var(--clr-navy-900);
+  border-radius: 0.8rem;
   margin-top: -6rem;
+  position: relative;
+  z-index: 1000;
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.title--block, .duration {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  color: aliceblue;
+  font-weight: var(--fw-bold);
+  white-space: nowrap;
+  line-height: 1;
+  align-self: flex-start;
+}
+
+.icon--ellipsis {
+  width: 1.8rem;
+  height: 0.4rem;
+}
+
+.current--time {
+  color: aliceblue;
+  font-size: 1.8rem;
+  font-weight: var(--fw-light);
+}
+
+.previous--time {
+  color: var(--clr-navy-200);
 }
 
 .orange300 {
