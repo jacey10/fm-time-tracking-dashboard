@@ -194,6 +194,9 @@ body {
 .dashboard--btn {
   all: unset;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  outline: none;
 }
 
 .dashboard--btn:hover {
