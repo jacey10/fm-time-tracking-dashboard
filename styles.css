@@ -198,6 +198,7 @@ body {
 
 .dashboard--btn:hover {
   color: white;
+  outline: none;
 }
 
 .main__profile--foreground{
@@ -325,6 +326,12 @@ body {
 }
 
 
+@media screen and (min-width: 48rem) {
 
+}
+
+@media screen and (min-width: 61.625rem) {
+  
+}
 
 
