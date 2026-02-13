@@ -198,6 +198,9 @@ body {
 
 .dashboard--btn:hover {
   color: white;
+}
+
+.dashboard--btn:focus {
   outline: none;
 }
 
