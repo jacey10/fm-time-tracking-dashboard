@@ -185,7 +185,7 @@ body {
   background: var(--clr-navy-900);
 }
 
-.dashboard--timeline {
+.timeframes--container {
   display: flex;
   justify-content: center;
   gap: var(--space-xxlg);
@@ -194,7 +194,7 @@ body {
   font-size: 1rem;
 }
 
-.dashboard--btn {
+.timeframe--btn {
   all: unset;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
@@ -202,15 +202,15 @@ body {
   outline: none;
 }
 
-.dashboard--btn:hover {
+.timeframe--btn:hover {
   color: var(--clr-white);
 }
 
-.dashboard--btn:focus {
+.timeframe--btn:focus {
   outline: none;
 }
 
-.dashboard--btn.active {
+.timeframe--btn.active {
   color: var(--clr-white);
 }
 
