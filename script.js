@@ -1,28 +1,46 @@
-const previousLabel ={
-    dailly: 'Yesterday',
+const previousLabel = {
+    daily: 'Yesterday',
     weekly: 'Last Week',
     monthly: 'Last Month'
 };
 
 let activeTimeframe = 'weekly';
 
-const buttons = document.querySelectorAll('.timeframe--buttons');
+const buttons = document.querySelectorAll('.timeframe--btn');
 const cards = document.querySelectorAll('.cards');
 
-function updateCards (data, timeframe) {
-    cards.forEach((card) => {
+function updateCards(data, timeframe) {
+    cards.forEach(card => {
         const activity = card.dataset.activity;
-        const activityData = data.find(item => item.title === activity);
-    });
+        const dataActivity = data.find(item => item.title === activity);
+        if (!dataActivity) return;
 
-    cards.querySelectorAll('.current--time').textContent = activityData.timeframes[timeframe].current;
-    cards.querySelectorAll('.previous--time').textContent = activityData.timeframes[timeframe].previous;
-};
+        card.querySelector('.current--time').textContent = `${dataActivity.timeframes[timeframe].current}hrs`;
+        card.querySelector('.previous--time').textContent = `${previousLabel[timeframe]} - ${dataActivity.timeframes[timeframe].previous}hrs`;
+    });
+}
 
 fetch('data.json')
-.then((response) => {
+  .then((response) => {
     return response.json();
-})
-.then((data) => {
-    console.log(data);
-});
+  })
+  .then((data) => {
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const timeframe = btn.dataset.timeframe;
+            activeTimeframe = timeframe;
+
+            buttons.forEach(b => {
+                b.classList.remove('active');
+            });
+
+            btn.classList.add('active');
+            updateCards(data, activeTimeframe);
+        });
+    });
+    //Initial render
+    updateCards(data, activeTimeframe);
+    document
+    .querySelector(`[data-timeframe="${activeTimeframe}"]`)
+    .classList.add('active');
+  });
