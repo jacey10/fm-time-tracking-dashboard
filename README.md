@@ -14,7 +14,6 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -30,55 +29,41 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](/assets/screenshots/ttd1.png)
+![](/assets/screenshots/ttt2.png)
+![](/assets/screenshots/ttt3.png)
+![](/assets/screenshots/ttt1.png)
 
 
 ### Links
-- Solution URL: ()
-- Live Site URL: ()
+- Solution URL: (https://github.com/jacey10/fm-time-tracking-dashboard)
+- Live Site URL: (https://jacey10.github.io/fm-time-tracking-dashboard/)
 
 ## My process
 
 ### Built with
 - Semantic HTML5 markup
+- Data Attributes
 - CSS custom properties
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- Separation of Concerns (in mind)
 
 ### What I learned
-- I had a better understanding of how to use flexbox to create responsive layouts and where to use it.
-- I haven't really worked with lists and tables in a long time. Neither did I have fully understand how to style them. While doing so, I stumbled on some problems like choosing the right border-bottom for the table and styling markers for list. This challenge gave me the opportunity to learn a lot more about how to do all these.
-- I had a better understanding of "width:100%" and how elements with this property expands to fill the width of their containers.
-- I implemented the mobile first design, before writing media queries for larger screens (i.e. tablets and desktops).
-- With the aid of ChatGPT, I learned how to use customers markers instead of default list markers to avoid layout issues.
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+- How to fetch data and populate it in the UI
+- Separation of concerns makes debugging 10x easier
+- Small functions > giant functions
+- Clear naming reduces mental load
 
 ### Continued development
-- 
+- I'll continue to learn about state management, 
 
 ### Useful resources
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- ChatGPT  and Claude for concept clarification and debugging.
 
 
 ## Author
 - Website - [James Chima](https://www.your-site.com)
 - Frontend Mentor - [@jacey10](https://www.frontendmentor.io/profile/jacey10)
 - Twitter - [@jacey_opara](https://x.com/jacey_opara)
-
-## Acknowledgments
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
