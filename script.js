@@ -39,12 +39,6 @@ fetch('data.json')
         });
     });
 
-    // Initial render
     updateCards(data, activeTimeframe);
-    document
-    // Initial render
-    updateCards(data, activeTimeframe);
-    document
-      .querySelector(`[data-timeframe="${activeTimeframe}"]`)
-      .classList.add('active');
+    document.querySelector(`[data-timeframe="${activeTimeframe}"]`).classList.add('active');
   });
